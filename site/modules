@@ -3,7 +3,10 @@
 #
 # In most cases, it is not required so don't add it.
 
-GLUON_SITE_FEEDS="community"
+GLUON_SITE_FEEDS="kbuspecialpackages community"
+PACKAGES_KBUSPECIALPACKAGES_REPO=https://github.com/ff-kbu/gluon-special-packages.git
+PACKAGES_KBUSPECIALPACKAGES_COMMIT=ca98d87e218b1e51ea058b9c87e13905d7b7b1cd
+PACKAGES_KBUSPECIALPACKAGES_BRANCH=master
 PACKAGES_COMMUNITY_REPO=https://github.com/freifunk-gluon/community-packages.git
 PACKAGES_COMMUNITY_COMMIT=4a1ae81f03c4ff0da17fb174e97bc630541fad3c
 PACKAGES_COMMUNITY_BRANCH=main
