@@ -1,0 +1,26 @@
+From 9ca5bb495f6ffc5097e8294f474703b79342ab40 Mon Sep 17 00:00:00 2001
+From: Marssl78 <marssl@t-online.de>
+Date: Sat, 7 Nov 2026 20:47:19 +0100
+Subject: [PATCH] add reporting pubkey_privacy variable status
+
+---
+ .../files/usr/lib/lua/gluon/mesh-vpn/provider/wireguard.lua  | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/gluon-mesh-vpn-wireguard-kbu/files/usr/lib/lua/gluon/mesh-vpn/provider/wireguard.lua b/gluon-mesh-vpn-wireguard-kbu/files/usr/lib/lua/gluon/mesh-vpn/provider/wireguard.lua
+index fb5041c..e054718 100755
+--- a/gluon-mesh-vpn-wireguard-kbu/files/usr/lib/lua/gluon/mesh-vpn/provider/wireguard.lua
++++ b/gluon-mesh-vpn-wireguard-kbu/files/usr/lib/lua/gluon/mesh-vpn/provider/wireguard.lua
+@@ -44,4 +44,9 @@ function M.mtu()
+ 	return site.mesh_vpn.wireguard.mtu()
+ end
+ 
++function M.pubkey_privacy()
++	-- WireGuard inherently doesn't leak the pubkey to third parties upon initiating connections.
++	return false
++end
++
+ return M
+-- 
+2.43.0
+
