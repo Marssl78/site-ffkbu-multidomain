@@ -6,11 +6,11 @@ This is my personal site for Gluon v2025.X with wireguard.
 
 ## The main differences to the v2022.x Version are:
 
-1. adding OWE in transition-mode to WLAN-APs
-2. not using kbu-ssid-changer but current ffac-ssid-changer from community-packages due to kbu-ssid-changer doesn't handle owe-interfaces
-3. including a patch for wgkbu, because it doesn't deliver pubkey_privacy state to node's status-page (which gives error 500 on status page of nodes with activated mesh-vpn).
-4. only using wg-peers 6 and 7, as others are dead meanwhilst
-6. adding my PubKey for administrating
+1. adding OWE in transition-mode to APs
+2. not using kbu-ssid-changer but current ffac-ssid-changer as it handles owe-interfaces correctly
+3. patching wgkbu (mesh-vpn-wiregurad-kbu) to deliver "pubkey_privacy"-variable to status page of node with active mesh-vpn, so status page won't show error 500
+4. only use wg-peers 6 and 7, as others are dead meanwhilst
+5. adding my PubKey for administrating
 
 ## Build Instructions
 
