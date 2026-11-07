@@ -7,6 +7,7 @@ features({
 	'ebtables-filter-multicast',
 	'ebtables-filter-ra-dhcp',
 	'ebtables-limit-arp',
+	'ffkbu-files',
 	'mesh-batman-adv-15',
 	'mesh-vpn-wireguard',
 	'respondd',
