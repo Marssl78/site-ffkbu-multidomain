@@ -3,7 +3,7 @@
 #
 # In most cases, it is not required so don't add it.
 
-GLUON_SITE_FEEDS="wgkbu kbuspecialpackages ssidchanger"
+GLUON_SITE_FEEDS="wgkbu kbuspecialpackages ssidchanger community"
 PACKAGES_WGKBU_REPO=https://github.com/ff-kbu/gluon-mesh-vpn-wireguard.git
 PACKAGES_WGKBU_COMMIT=0c3a04c88ccaa1297aa6ddbfe3d7736041867203
 PACKAGES_WGKBU_BRANCH=master
@@ -15,3 +15,7 @@ PACKAGES_KBUSPECIALPACKAGES_BRANCH=master
 PACKAGES_SSIDCHANGER_REPO=https://github.com/ff-kbu/gluon-ssid-changer.git
 PACKAGES_SSIDCHANGER_COMMIT=3d9ea5a71ea4a4c67d03a1845ec01c85be6f36cb
 PACKAGES_SSIDCHANGER_BRANCH=master
+
+PACKAGES_COMMUNITY_REPO=https://github.com/freifunk-gluon/community-packages.git
+PACKAGES_COMMUNITY_COMMIT=4a1ae81f03c4ff0da17fb174e97bc630541fad3c
+PACKAGES_COMMUNITY_BRANCH=main
