@@ -7,9 +7,8 @@ features({
 	'ebtables-filter-multicast',
 	'ebtables-filter-ra-dhcp',
 	'ebtables-limit-arp',
-	'ffkbu-files',
 	'mesh-batman-adv-15',
-	'mesh-vpn-wireguard-kbu',
+	'mesh-vpn-wireguard',
 	'respondd',
 --	'ssid-changer',
 	'status-page',
@@ -43,23 +42,6 @@ packages({
 	'iwinfo',
 	'ffac-ssid-changer',
 	})
-
--- MT7915-hotfix nicht mehr nötig in v2025.1.x
---
---if target('ramips', 'mt7621') or target('mediatek', 'filogic') then
---        -- restart device if mt7915e driver shows known failure symptom
---        packages({
---               'ffac-mt7915-hotfix',
---		})
---end
-
---if device({'avm-fritz-box-4040'})
---	then
---	  packages({
---		'-kmod-ath10k',
---		'kmod-ath10k-smallbuffers',
---	  	  })
---end
 
 --if device({
 --	'tp-link-archer-c50-v1',
