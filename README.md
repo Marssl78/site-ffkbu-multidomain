@@ -1,4 +1,3 @@
-[![CI](https://github.com/ff-kbu/site-ffkbu-multidomain/actions/workflows/ci.yml/badge.svg?branch=wireguard)](https://github.com/ff-kbu/site-ffkbu-multidomain/actions/workflows/ci.yml)
 
 Freifunk KBU Multihood with Batman15 and 802.11s
 
