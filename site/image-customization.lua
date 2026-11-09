@@ -43,18 +43,27 @@ packages({
 	'ffac-ssid-changer',
 	})
 
---if device({
---	'tp-link-archer-c50-v1',
---	'tp-link-archer-c50-v2',
---	'tp-link-archer-c50-v3',
---	'tp-link-archer-c50-v4',
---	'tp-link-archer-c50-v5',
---	'tp-link-archer-c50-v6',
---	}) then
---	     packages({
---	             'zram-swap',
---	             })
+-- MT7915-hotfix nicht mehr nötig in v2025.1.x
+--
+--if target('ramips', 'mt7621') or target('mediatek', 'filogic') then
+--        -- restart device if mt7915e driver shows known failure symptom
+--        packages({
+--               'ffac-mt7915-hotfix',
+--		})
 --end
+
+if device({
+	'tp-link-archer-c50-v1',
+	'tp-link-archer-c50-v2',
+	'tp-link-archer-c50-v3',
+	'tp-link-archer-c50-v4',
+	'tp-link-archer-c50-v5',
+	'tp-link-archer-c50-v6',
+	}) then
+	     packages({
+	             'zram-swap',
+	             })
+end
 
 -- basic support for USB stack
 usb_packages_basic = ({
