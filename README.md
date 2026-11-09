@@ -9,7 +9,7 @@ This is my personal site for Gluon v2025.X with wireguard.
 1. adding OWE in transition-mode to APs
 2. not using kbu-ssid-changer but current ffac-ssid-changer as it handles owe-interfaces correctly
 3. patching wgkbu (mesh-vpn-wiregurad-kbu) to deliver "pubkey_privacy"-variable to status page of node with active mesh-vpn, so status page won't show error 500
-4. only use wg-peers 6 and 7, as others are dead meanwhilst
+4. only use wg-peers bonn6 and bonn7, as bonn1 to bonn5 are dead meanwhilst
 5. adding my PubKey for administrating
 
 ## Build Instructions
